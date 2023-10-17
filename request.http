@@ -1,0 +1,41 @@
+### Sign In
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+  "email": "bob1@gmail.com",
+  "password": "password123"
+}
+
+### Sign Up
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+  "username": "bob1",
+  "email": "bob1@gmail.com",
+  "password": "password123"
+}
+
+### Sign Out
+POST http://localhost:3000/auth/signout
+
+### Get ME
+GET http://localhost:3000/auth/me
+
+### Get Users
+GET http://localhost:3000/users
+
+
+### Create a User
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "username": "foobar",
+  "email": "foobar@gmail.com",
+  "password": "foobar123"
+}
+
+### Delete a User with userId
+DELETE  http://localhost:3000/users/17
